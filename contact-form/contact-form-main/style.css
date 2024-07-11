@@ -1,0 +1,203 @@
+body{
+    background-color:  hsl(148, 38%, 91%);
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Karla';
+}
+.pop-up{
+    display: none;
+}
+#submitted{
+    margin-top: 10px;
+margin-bottom: 0px;
+    background-color: hsl(187, 24%, 22%);
+    color:white;
+    max-width:max-content;
+    padding: 13px;
+    border-radius: 8px;
+    display: block;
+    flex-direction: column;
+    margin-inline: auto;
+}
+.container-box{
+width:90%;
+max-width: 600px;
+background-color: hsl(0, 0%, 100%);
+/* height: 85%; */
+display: block;
+margin: 0px auto;
+transform: translateY(0px);
+border-radius: 15px;
+/* padding-left: 24px; */
+}
+.container-box h1{
+    padding-top:20px;
+    padding-right: 24px;
+    padding-bottom:8px;
+    text-align: center;
+     }
+asterik{
+    color:hsl(169, 82%, 27%);
+}
+.input-container{
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.71);
+    height:35px;
+    border-radius: 4px;
+    margin-top: -6px;
+}
+.input-container:hover{
+    cursor: pointer;
+}
+.content-one{
+    margin-left: 20px;
+    width:45%;
+}
+.content-two{
+    margin-right: 20px;
+    width:45%;
+}
+.content-three{
+    margin-left: 24px;
+    width: 100%;
+    margin-right: 24px;
+    margin-top: 7px;
+}
+.input-container input{
+    border:0;
+    outline: 0;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+    padding-right: 5px;
+    }
+    .input-container input:hover{
+    cursor: pointer;
+    }
+.form{
+    display: flex;
+    flex-direction: row;
+    gap:2%;
+    flex-wrap: wrap;
+}
+.content-four{
+    margin-left: 24px;
+}
+.content-four p{
+    display: block;
+}
+.radio-one,.radio-two{
+    border:1px solid rgba(0, 0, 0, 0.71);
+    height:35px;
+    border-radius: 4px;
+    margin-right: 24px;
+    display: inline-block;
+    width: 100%;
+}
+.radio-one,.radio-two:hover{
+    cursor: pointer;
+}
+.radio-two{
+    margin-top: 5px;
+}
+.radio-one input{
+    margin-left: 10px;
+    margin-top: 9px;
+}
+.radio-two input{
+    margin-left: 10px;
+    margin-top: 9px;
+}
+.radio-one input,.radio-two input:hover{
+    cursor: pointer;
+}
+.radio-one label,.radio-two label:hover{
+    cursor: pointer;
+}
+.radio-two{
+    margin-right: 20px;
+}
+.content-five{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+span{
+    color:red;
+    font-size: 14px;
+    padding-top: 5px;
+    display: none;
+}
+.s-by-s{
+margin-right: 24px;
+}
+.message{
+    width:100%;
+    height:80px;
+    border:1px solid rgba(0, 0, 0, 0.71);
+    border-radius: 4px;
+}
+textarea{
+    resize: none;
+display:block;
+width: 96%;
+height:68px;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 3px;
+outline: 0;
+ border:0;
+}
+#consent{
+   margin-left: 24px;
+   margin-top: 24px;
+}
+#consent:hover{
+    cursor: pointer;
+}
+.consent{
+    margin-left: 7px;
+    font-size: 15px;
+}
+.imp{
+    margin-left: 24px;
+}
+button{
+    margin-top: 24px;
+    background-color: hsl(169, 82%, 27%);
+    color:white;
+    font-family: 'Karla';
+    padding-bottom: 8px;
+    padding-top: 8px;
+    width:90%;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+button:hover{
+    cursor: pointer;
+}
+#error{
+    display: block;
+}
+
+@media(width<557px){
+    .content-one{
+        width:100%;
+        margin-right: 24px;
+        transform: translateY(-10px);
+    }
+    .content-two{
+        width:100%;
+        margin-right: 24px;
+        margin-left: 24px;
+        margin-top: 0px;
+    }
+    #submitted{
+     text-align: center;
+    max-width:350px;
+    }
+}

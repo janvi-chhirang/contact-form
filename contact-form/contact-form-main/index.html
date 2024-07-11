@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd-Mentor || Contact-Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="pop-up">
+      <h3><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;Message Sent!</h3>
+      <p>Thanks for completing the form.We'll be in touch soon!</p>
+    </div> 
+    <div class="container-box">
+      <h1>Contact Us</h1>
+      <div class="form">
+        <div class="content-one">
+          <p>First name <asterik>*</asterik></p>
+          <div class="input-container">
+            <input class="firstName" type="text" />
+          </div>
+          <span class="first_name-error" >This field is required</span>
+        </div>
+        <div class="content-two">
+          <p>Last name <asterik>*</asterik></p>
+          <div class="input-container">
+            <input class="lastName" type="text" />
+          </div>
+          <span class="last_name-error">This field is required</span>
+        </div>
+        <div class="content-three">
+          <p>Email address <asterik>*</asterik></p>
+          <div class="input-container">
+            <input class="email" type="text" pattern=".+@gmail.com"  />
+          </div>
+          <span class="email_name-error">This field is required</span>
+        </div>
+        <div class="content-four">
+          <p>Query Type <asterik>*</asterik></p>
+          <div class="s-by-s">
+            <div class="radio-one">
+              <input
+                type="radio"
+                id="general-enquiry"
+                name="option"
+                value="radio-one" required
+              />
+              <label for="radio-one">General Enquiry</label><br />
+            </div>
+            <div class="radio-two">
+              <input
+                type="radio"
+                id="support-request"
+                name="option"
+                value="radio-two" 
+              />
+              <label for="radio-two">Support Request</label><br />
+            </div>
+          </div>
+          <span class="radio-error">Please select a query type</span>
+        </div>
+      </div>
+      <div class="content-five">
+        <p>Message <asterik>*</asterik></p>
+        <div class="message">
+          <textarea rows="5" cols="60" name="text"></textarea>
+        </div>
+        <span class="message-error">This field is required</span>
+      </div>
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent" class="consent"
+        >I consent to being contacted by the team. <asterik>*</asterik></label
+      ><br />
+      <span class="imp"
+        >To submit this form,please consent to being contacted</span
+      ><br />
+      <button type="submit">Submit</button>
+    </div>
+  </body>
+</html>
